@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background: linear-gradient(to right,rgba(255,108,191,255),rgba(255,130,171,255),rgba(255,157,147,255),rgba(255,185,122,255),rgba(255,215,96,255) );
+        font-family: Arial, Helvetica, sans-serif;
+}
+ .navbar{
+    text-align: center; 
+    margin-bottom: auto;
+    margin-left: auto;
+    
+ }   
+    
+  .container {
+    display: flex;
+    gap: 20px;
+}
+  .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px 30px;
+    overflow: hidden;
+  }
+  .image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 10px;
+    object-fit: cover;
+    border-radius: 5px 30px;
+    border: 2px solid white;
+  }
+  h2,p{
+    margin: 0;
+  }
+  .button{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    cursor: pointer;  
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px 20px;
+  }
+  .order-button-bottom {
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 100%;
+    }
+}
+
+</style>
+<title>OrderFood</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2 style="text-align: center; color: white; padding: 20px;">Order Now</h2>
+      </div>
+      
+  <div class="container">
+    <div class="box">
+      <img class="image" src="/css/img4.jpg" alt="Image of burger">
+      <h2>Burger</h2>
+      <p>Lorem Ipsum has been the
+        industry's standard dummy text.</p>
+    </div>
+    <div class="box">
+      <img class="image" src="/css/img2.jpg" alt="Image of pizza">
+      <h2>Pizza</h2>
+      <p>Lorem Ipsum has been the</p>
+        <p>industry's standard dummy text.</p>
+    </div>
+    <div class="box">
+      <img class="image" src="/css/img3.jpg" alt="Image of pasta">
+      <h2>Pasta</h2>
+      <p>Lorem Ipsum has been the industry's standard dummy text.</p> 
+    </div>
+    <div style="text-align: center;">
+        <a class="order-button-bottom" href="#">Order</a>
+      </div>
+  </div>
+</body>
+</html>
